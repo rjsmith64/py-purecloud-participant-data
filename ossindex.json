@@ -1,0 +1,19 @@
+{
+  "author": "ININ PSO PureCloud Architects",
+  "title": "PureCloud Conversation Participant Data CSV Exporter",
+  "logo_url": "https://github.com/rjsmith64/py-purecloud-participant-data/raw/master/assets/csv_logo.png",
+  "categories": [
+    "analytics"
+  ],
+  "tags": [
+    "analytics",
+    "reporting",
+    "csv"
+  ],
+  "apis": [
+    "platform"
+  ],
+  "sdks": [
+    "python"
+  ]
+}

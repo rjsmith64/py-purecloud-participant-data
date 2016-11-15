@@ -6,3 +6,5 @@ Edit configuration.json to specify:
 - Regional environment settings
 - Oauth options
 - Participant purpose export settings
+
+Download and unzip Windows binary from build/ folder. Run 'py-purecloud-participant-data.exe' after configuring configuration.json and query.json.
