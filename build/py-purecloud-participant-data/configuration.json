@@ -1,0 +1,25 @@
+{
+	"oauth_type": "client_credentials",
+	"client_id": "",
+	"client_secret": "",
+	"environment": "mypurecloud.com",
+	"api_host": "https://api.mypurecloud.com",
+	"ca_cert_file": "cacert.pem",
+	
+	"participant_purpose": ["manual","dialer","inbound","acd","ivr","voicemail","outbound","agent","user","station","group","customer","external"],
+	"include_no_attribute_results": true,
+
+	"redirect_uri": "http://localhost:8080",
+	"server_host": "",
+	"port": 8080,
+	
+	"_comments": [
+		"oauth_type: implicit_grant | client_credentials. implicit_grant starts a local webserver and requires user login and requires redirect_uri, server_host, and port. client_credentials requires no login, but requires both client_id and client_secret.",
+		
+		"participant_purpose available strings = manual, dialer, inbound, acd, ivr, voicemail, outbound, agent, user, station, group, customer, external. Removing these will limit the kinds of conversation participants included in results.",
+		
+		"include_no_attribute_results: true = export all conversation participants; false = export only participants where Participant Data (attributes) is non-empty.",
+		
+		"ca_cert_file: relative path to file used to verify SSL requests (required) - cacert.pem is provided."
+	]
+}
