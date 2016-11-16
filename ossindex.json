@@ -1,0 +1,19 @@
+{
+  "author": "R. J. Smith",
+  "title": "PureCloud Conversation Participant Data CSV Exporter",
+  "logo_url": "https://github.com/rjsmith64/py-purecloud-participant-data/blob/master/assets/csv_logo.png",
+  "categories": [
+    "analytics"
+  ],
+  "tags": [
+    "analytics",
+    "reporting",
+    "csv"
+  ],
+  "apis": [
+    "platform"
+  ],
+  "sdks": [
+    "python"
+  ]
+}
