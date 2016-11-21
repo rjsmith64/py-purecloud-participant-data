@@ -84,7 +84,7 @@ try:
     count = len(analytics_conversations)
     conversations_api = PureCloudPlatformApiSdk.ConversationsApi()
     for i, convo in enumerate(analytics_conversations):
-        print('GET conversation {0} of {1}'.format(i + 1, count))
+        print('GET conversation {0} of {1} (id {2})'.format(i + 1, count, convo.conversation_id))
         full_convo = conversations_api.get_conversation_id(convo.conversation_id)
         full_conversations.append(full_convo)
 
