@@ -1,4 +1,4 @@
-import PureCloudPlatformApiSdk, requests, json, os, csv, oauth2
+import PureCloudPlatformApiSdk, requests, json, os, csv, oauth2, time
 from PureCloudPlatformApiSdk.rest import ApiException
 
 with open('configuration.json') as config_file:
@@ -85,8 +85,13 @@ try:
     conversations_api = PureCloudPlatformApiSdk.ConversationsApi()
     for i, convo in enumerate(analytics_conversations):
         print('GET conversation {0} of {1} (id {2})'.format(i + 1, count, convo.conversation_id))
-        full_convo = conversations_api.get_conversation_id(convo.conversation_id)
-        full_conversations.append(full_convo)
+        try:
+            full_convo = conversations_api.get_conversation_id(convo.conversation_id)
+            full_conversations.append(full_convo)
+        except ApiException as e:
+            print('GET FAILED: conversation id: {0}'.format(convo.conversation_id))
+            print(e)
+        time.sleep(0.2)
 
     attributes_set = set()
     results = []
