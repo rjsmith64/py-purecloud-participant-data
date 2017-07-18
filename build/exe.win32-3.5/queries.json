@@ -1,0 +1,126 @@
+[{
+	"interval": "2017-01-01T00:00:00Z/2017-02-01T00:00:00Z",
+	"order": "asc",
+	"orderBy": "conversationStart",
+	"paging": {
+		"pageSize": 100,
+		"pageNumber": 1
+	},
+	"segmentFilters": [{
+		"type": "or",
+		"predicates": [{
+			"type": "dimension",
+			"dimension": "mediaType",
+			"operator": "matches",
+			"value": "voice"
+		}]
+	}]
+},
+{
+	"interval": "2017-02-01T00:00:00Z/2017-03-01T00:00:00Z",
+	"order": "asc",
+	"orderBy": "conversationStart",
+	"paging": {
+		"pageSize": 100,
+		"pageNumber": 1
+	},
+	"segmentFilters": [{
+		"type": "or",
+		"predicates": [{
+			"type": "dimension",
+			"dimension": "mediaType",
+			"operator": "matches",
+			"value": "voice"
+		}]
+	}]
+},
+{
+	"interval": "2017-03-01T00:00:00Z/2017-04-01T00:00:00Z",
+	"order": "asc",
+	"orderBy": "conversationStart",
+	"paging": {
+		"pageSize": 100,
+		"pageNumber": 1
+	},
+	"segmentFilters": [{
+		"type": "or",
+		"predicates": [{
+			"type": "dimension",
+			"dimension": "mediaType",
+			"operator": "matches",
+			"value": "voice"
+		}]
+	}]
+},
+{
+	"interval": "2017-04-01T00:00:00Z/2017-05-01T00:00:00Z",
+	"order": "asc",
+	"orderBy": "conversationStart",
+	"paging": {
+		"pageSize": 100,
+		"pageNumber": 1
+	},
+	"segmentFilters": [{
+		"type": "or",
+		"predicates": [{
+			"type": "dimension",
+			"dimension": "mediaType",
+			"operator": "matches",
+			"value": "voice"
+		}]
+	}]
+},
+{
+	"interval": "2017-05-01T00:00:00Z/2017-06-01T00:00:00Z",
+	"order": "asc",
+	"orderBy": "conversationStart",
+	"paging": {
+		"pageSize": 100,
+		"pageNumber": 1
+	},
+	"segmentFilters": [{
+		"type": "or",
+		"predicates": [{
+			"type": "dimension",
+			"dimension": "mediaType",
+			"operator": "matches",
+			"value": "voice"
+		}]
+	}]
+},
+{
+	"interval": "2017-06-01T00:00:00Z/2017-07-01T00:00:00Z",
+	"order": "asc",
+	"orderBy": "conversationStart",
+	"paging": {
+		"pageSize": 100,
+		"pageNumber": 1
+	},
+	"segmentFilters": [{
+		"type": "or",
+		"predicates": [{
+			"type": "dimension",
+			"dimension": "mediaType",
+			"operator": "matches",
+			"value": "voice"
+		}]
+	}]
+},
+{
+	"interval": "2017-07-01T00:00:00Z/2017-08-01T00:00:00Z",
+	"order": "asc",
+	"orderBy": "conversationStart",
+	"paging": {
+		"pageSize": 100,
+		"pageNumber": 1
+	},
+	"segmentFilters": [{
+		"type": "or",
+		"predicates": [{
+			"type": "dimension",
+			"dimension": "mediaType",
+			"operator": "matches",
+			"value": "voice"
+		}]
+	}]
+}]

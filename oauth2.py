@@ -2,7 +2,7 @@ import requests, socket, webbrowser, re, base64
 
 def send_response(client_connection, responseStatus, responseBody):
     # Send response
-    http_response = responseStatus + '\n\n' + responseBody
+    http_response = responseStatus + '\r\n' + responseBody
     print('[RESPONSE] ' + responseStatus + '\n')
     client_connection.sendall(http_response.encode('utf-8'))
     client_connection.close()
