@@ -6,6 +6,7 @@ Release Notes / Updates:
 - queries.json - can now add multiple conversation detail queries; used when desired interval exceeds maximum and query must be broken into sub-queries. 
 
 How-to:
+
 Edit queries.json to specify array of Conversation Details Queries (conversations included in multiple queries will be de-duplicated).
 
 Edit configuration.json to specify:
@@ -14,6 +15,7 @@ Edit configuration.json to specify:
 - Participant purpose export settings
 
 Running executable-only:
+
 Download and unzip Windows binary from build/ folder. Run 'py-purecloud-participant-data.exe' after configuring configuration.json and queries.json.
 
 Required PureCloud permissions:
