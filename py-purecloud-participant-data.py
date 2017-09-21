@@ -112,7 +112,7 @@ try:
             print('Query #' + str(i), 'conversations:', len(analytics_response.conversations))
             for c in analytics_response.conversations:
                 analytics_conversations[c.conversation_id] = c
-            query.paging['pageNumber'] += 1
+            query.paging['pageNumber'] = int(query.paging['pageNumber']) + 1
             analytics_response = analytics_api.post_analytics_conversations_details_query(query)
 
     count = len(analytics_conversations)
